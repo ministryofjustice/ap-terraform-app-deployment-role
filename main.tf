@@ -20,7 +20,7 @@ data "aws_iam_policy_document" "assume_role_policy" {
 
 resource "aws_iam_role" "this" {
   name               = var.repo
-  description        = "Role to permit GitHub action to assume other roles"
+  description        = "Role to permit GitHub action to build and deploy user applications"
   assume_role_policy = data.aws_iam_policy_document.assume_role_policy.json
   tags               = var.tags
 }
