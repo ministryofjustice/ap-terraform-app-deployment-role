@@ -1,4 +1,4 @@
-output "arn" {
-  description = "The ARN of the configured role"
-  value       = aws_iam_role.this.arn
-}
+# output "example_output" {
+#   description = "example output"
+#   value       = 
+# }
