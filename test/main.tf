@@ -1,7 +1,7 @@
 module "example" {
    source = "./.."
    
-   repo = "example"
+   repo = "example1"
    organisation = "example organisation"
    openid_connect_provider_arn = "examplearn"
 
