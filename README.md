@@ -32,9 +32,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_openid_connect_provider_arn"></a> [openid\_connect\_provider\_arn](#input\_openid\_connect\_provider\_arn) | The ARN of the AWS IAM OpenID connect provider | `any` | n/a | yes |
-| <a name="input_organisation"></a> [organisation](#input\_organisation) | The name of the GitHub organisation or user | `any` | n/a | yes |
-| <a name="input_repo"></a> [repo](#input\_repo) | The name of the GitHub repository | `any` | n/a | yes |
+| <a name="input_openid_connect_provider_arn"></a> [openid\_connect\_provider\_arn](#input\_openid\_connect\_provider\_arn) | The ARN of the AWS IAM OpenID connect provider | `string` | n/a | yes |
+| <a name="input_organisation"></a> [organisation](#input\_organisation) | The name of the GitHub organisation or user | `string` | n/a | yes |
+| <a name="input_repo"></a> [repo](#input\_repo) | The name of the GitHub repository | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | The tags to add to the resources | `map(string)` | `{}` | no |
 
 ## Outputs
