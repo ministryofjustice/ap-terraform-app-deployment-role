@@ -19,15 +19,16 @@ data "aws_iam_policy_document" "assume_role_policy" {
 }
 
 resource "aws_iam_role" "this" {
-  name               = var.repo
-  description        = "Role to permit GitHub action to build and deploy user applications"
-  assume_role_policy = data.aws_iam_policy_document.assume_role_policy.json
-  tags               = var.tags
+  name                 = var.repo
+  description          = "Role to permit GitHub action to build and deploy user applications"
+  assume_role_policy   = data.aws_iam_policy_document.assume_role_policy.json
+  permissions_boundary = var.permissions_boundary
+  tags                 = var.tags
 }
 
 data "aws_iam_policy_document" "allow_ecr_policy" {
 
-statement {
+  statement {
     actions = [
       "ecr:GetAuthorizationToken"
     ]
